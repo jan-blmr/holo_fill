@@ -1,0 +1,60 @@
+You are an expert in 3D graphics and Three.js. Given the following image and its description, generate only the JavaScript code (no HTML, no import or script tags) to render a 3D scene using Three.js.
+
+Assume you are given the following variables:
+- container: a DOM element where you should append the Three.js renderer.
+- THREE: the Three.js library.
+- OrbitControls: the OrbitControls class.
+- uploadedImage: an HTMLImageElement containing the uploaded image (you may use this in your scene as a texture, for color sampling, or other creative purposes).
+
+Your goal is to create a beautiful, visually appealing, and creative 3D rendering that is both engaging and clear. Use your expertise in 3D graphics, color, lighting, and composition to make the scene as aesthetically pleasing and impressive as possible. Apply best practices in 3D visualization, and strive for a result that would delight and inspire viewers.
+
+When converting 2D images to 3D, use the following approach:
+- Analyze the description and list the main objects, their types, colors, and spatial relationships.
+- For each object, choose the most plausible 3D shape (see mappings below).
+- Use THREE.Group for grouping related or nested objects.
+- Use color, size, and position to distinguish objects and relationships.
+- Add comments in the code explaining each major step.
+- For people, animals, and other complex objects, strive to create a detailed and plausible 3D representation, using multiple meshes, groups, and realistic proportions where possible. Only use stylization or simplification if a realistic rendering is not feasible, and document this in comments.
+- For organic or irregular shapes (like pretzels, pizza slices, etc.), use THREE.ExtrudeGeometry, THREE.LatheGeometry, or custom THREE.Shape paths to approximate the outline and volume. Use curves, splines, or custom paths as needed. For example, a pretzel can be represented as a torus knot or a custom extruded shape, and a pizza slice as an extruded triangle with a curved crust and toppings as spheres or small extrusions. These are just examples—use similar creative solutions for other shapes based on your analysis of the image. Add comments explaining how you approximate complex or organic shapes.
+- When replicating shapes or objects from the image, use your creativity to the fullest. Consider combining multiple geometries, using custom shaders, or leveraging advanced Three.js features (like morph targets, displacement maps, or procedural geometry) to create a visually striking and imaginative 3D representation. Don't be afraid to experiment or use unconventional techniques if they help capture the spirit of the image.
+- You may use the uploaded image directly in your scene by:
+  - Applying it as a texture to meshes (e.g., planes, spheres, or custom geometry).
+  - Using it as an environment/background map.
+  - Sampling its colors to inform the palette of your 3D objects.
+  - Using its pixel data for displacement or bump mapping.
+  - Creating sprites or billboards from the image.
+  - Any other creative use you can imagine.
+  If you use the image, add comments explaining how and why you chose to do so.
+- Example creative uses of the uploaded image:
+  - Mapping a photo of a face onto a 3D head mesh.
+  - Wrapping a landscape photo around a cylinder or sphere to create a panorama.
+  - Using the image as a texture for a 3D card, sign, or painting in the scene.
+  - Sampling the image's dominant colors to color 3D objects.
+  - Using the image as a height/displacement map for terrain.
+- Strive to represent as much of the scene as possible, including multiple objects and their arrangement, while maintaining clarity.
+- Use creative lighting, shading, and camera angles to enhance the visual appeal.
+- If the image is extremely complex, a photo, or ambiguous, you may simplify or stylize the scene for clarity, but only as a last resort. Aim to preserve the main structure and relationships. Use a comic/cartoon style only if necessary, and document any major simplifications in comments.
+- If the image contains text or writing, you can ignore it and do not attempt to render it in 3D for now.
+
+Mappings:
+- A square in 2D becomes a cube in 3D.
+- A circle in 2D becomes a sphere in 3D.
+- A triangle in 2D becomes a pyramid (tetrahedron) in 3D.
+- A rectangle in 2D becomes a box in 3D.
+- An ellipse in 2D becomes an ellipsoid in 3D.
+- A line in 2D becomes a thin cylinder in 3D.
+- For more complex or abstract objects, assume a plausible 3D shape that best represents the object.
+
+If you need to use FontLoader, GLTFLoader, TextGeometry, or other Three.js example loaders or geometries, assume they are available as global variables (e.g., FontLoader, GLTFLoader, TextGeometry) and do not include import statements. Use them directly, e.g., const loader = new FontLoader(); or const geometry = new TextGeometry(...);
+
+Your code should:
+- Create a Three.js scene, camera, renderer, and add the renderer's DOM element to container.
+- Add interactive controls using new OrbitControls(camera, renderer.domElement).
+- Add lighting, geometry, and animation as needed.
+- Handle window resizing for responsiveness.
+
+Do not include any HTML, import, or script tags. Only output the JavaScript code for the scene setup.
+
+Only output the raw JavaScript code. Do not use Markdown formatting, triple backticks, or language tags. Do not wrap your code in any code block—just output the JavaScript code directly.
+
+Description: {description} 

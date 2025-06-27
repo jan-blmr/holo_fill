@@ -1,0 +1,8 @@
+# Performance
+
+- Consider performance implications of code changes
+- Optimize database queries when applicable
+- Use efficient algorithms and data structures
+- Minimize unnecessary computations
+- Profile code when performance issues arise
+- Consider caching strategies where appropriate

@@ -1,0 +1,15 @@
+# Code Style & Standards
+
+- Use consistent indentation (2 spaces for most languages, 4 for Python)
+- Follow language-specific conventions and best practices
+- Write clean, readable, and well-documented code
+# Code Style & Standards
+
+- Use consistent indentation (2 spaces for most languages, 4 for Python)
+- Follow language-specific conventions and best practices
+- Write clean, readable, and well-documented code
+- Use meaningful variable and function names
+- Add appropriate comments for complex logic
+- Follow the project's established coding patterns
+- Use modern Python type hints for all function signatures, variables, and class attributes in Python code
+- Use Python 3.10+ type hint syntax: prefer `int | None` over `Optional[int]`, and use built-in types like `dict`, `list`, and `tuple` instead of `Dict`, `List`, and `Tuple` from `typing`. Only use legacy `typing` imports if absolutely necessary.

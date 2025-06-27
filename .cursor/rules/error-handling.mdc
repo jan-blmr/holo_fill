@@ -1,0 +1,8 @@
+# Error Handling
+
+- Implement proper error handling
+- Provide meaningful error messages
+- Log errors appropriately for debugging
+- Use appropriate error types and codes
+- Handle edge cases gracefully
+- Don't expose sensitive information in error messages

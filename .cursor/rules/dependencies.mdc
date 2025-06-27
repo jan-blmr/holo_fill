@@ -1,0 +1,8 @@
+# Dependencies
+
+- Only add necessary dependencies
+- Keep dependencies up to date
+- Document why new dependencies are needed
+- Use specific version numbers when appropriate
+- Regularly audit dependencies for security issues
+- Consider the impact of dependency changes

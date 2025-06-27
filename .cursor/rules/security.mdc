@@ -1,0 +1,8 @@
+# Security
+
+- Never hardcode sensitive information like API keys
+- Use environment variables for configuration
+- Validate user inputs
+- Follow security best practices for the technology stack
+- Implement proper authentication and authorization
+- Sanitize data to prevent injection attacks

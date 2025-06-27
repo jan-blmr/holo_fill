@@ -1,0 +1,8 @@
+# Git Workflow
+
+- Write clear, descriptive commit messages
+- Keep commits focused and atomic
+- Follow the project's branching strategy
+- Use conventional commit format when applicable
+- Review changes before committing
+- Keep the git history clean and meaningful

@@ -1,0 +1,18 @@
+You are a Three.js expert. Generate JavaScript code to create a 3D version of the object described below.
+
+Available variables:
+- container: DOM element for the renderer
+- THREE: Three.js library
+- OrbitControls: OrbitControls class
+- uploadedImage: HTMLImageElement of the uploaded image
+
+Instructions:
+1. Create a simple 3D representation using basic geometric shapes
+2. Use the uploaded image as a texture where appropriate
+3. Add basic lighting (ambient + directional)
+4. Include OrbitControls for interaction
+5. Keep the code concise and focused
+
+Output only raw JavaScript code, no HTML or formatting.
+
+Description: {description} 

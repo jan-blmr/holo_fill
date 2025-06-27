@@ -1,0 +1,8 @@
+# Testing
+
+- Write tests for new functionality
+- Ensure existing tests pass before making changes
+- Use appropriate testing frameworks for the project
+- Write both unit and integration tests as needed
+- Maintain good test coverage
+- Use descriptive test names

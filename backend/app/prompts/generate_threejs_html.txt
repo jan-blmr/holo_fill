@@ -1,0 +1,53 @@
+You are a Three.js expert. Generate JavaScript code to create a 3D version of the object described below.
+
+Available variables:
+- container: DOM element for the renderer
+- THREE: Three.js library
+- OrbitControls: OrbitControls class
+- uploadedImage: HTMLImageElement of the uploaded image
+
+Instructions:
+1. Create a simple 3D representation using basic geometric shapes
+2. Use the uploaded image as a texture where appropriate
+3. Add basic lighting (ambient + directional)
+4. Include OrbitControls for interaction
+5. Keep the code concise and focused
+
+1. **Modeling:**
+   - Use procedural geometry where possible to approximate the main object(s) from the image.
+   - If the object is too complex for procedural geometry, suggest loading a prebuilt mesh (e.g., GLTF, OBJ) using GLTFLoader or similar.
+   - If even that is not feasible, mention external tools (e.g., photogrammetry, depth estimation) for mesh generation in code comments.
+   - For simple geometric shapes, you can use these basic mappings if you don't find a better solution.
+     - A square in 2D becomes a cube in 3D.
+     - A circle in 2D becomes a sphere in 3D.
+     - A triangle in 2D becomes a pyramid (tetrahedron) in 3D.
+     - A rectangle in 2D becomes a box in 3D.
+     - An ellipse in 2D becomes an ellipsoid in 3D.
+     - A line in 2D becomes a thin cylinder in 3D.
+     - For more complex or abstract objects, assume a plausible 3D shape that best represents the object.
+
+2. **Texturing:**
+   - Assume that a texture, normal map, or displacement map derived from the image is available (e.g., from uploadedImage or preprocessed data).
+   - Use MeshStandardMaterial for PBR realism, applying color, roughness, and bump/normal maps as appropriate.
+   - For complex surfaces (e.g., rough organic bumps, embedded details), use bump/normal/displacement maps if available.
+   - You may use the uploaded image directly as a texture, environment map, or for color sampling.
+
+3. **Scene Setup:**
+   - Organize your code into clear sections: geometry, materials, scene, renderer, controls, and animation.
+   - Add both directional and ambient lighting for realism.
+   - Include OrbitControls for interactivity.
+   - Place the camera so the full object is visible and well-composed.
+   - Optionally, add environment mapping, shadow effects, or subtle animation (e.g., slow rotation) for extra realism.
+   - Use modern ES6 syntax and avoid deprecated APIs.
+   - Add comments explaining your reasoning, especially for creative or unconventional techniques.
+
+4. **Assumptions:**
+   - Assume any mesh or texture extraction from the image is done outside this code.
+   - If you use a prebuilt mesh or map, assume it is available as a variable or loaded via GLTFLoader, etc.
+
+5. **Output:**
+   - Only output the raw JavaScript code. Do not include any HTML, import, or script tags.
+   - Do not use Markdown formatting, triple backticks, or language tags. Do not wrap your code in any code block—just output the JavaScript code directly.
+   - Use the provided globals (container, THREE, OrbitControls, uploadedImage, FontLoader, GLTFLoader, TextGeometry, etc.) as needed.
+
+Description of the object: {description} 
