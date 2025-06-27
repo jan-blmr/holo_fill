@@ -1,3 +1,5 @@
+![Holo Fill Example](assets/holo_fill_example.png)
+
 # Holo Fill
 
 Transform 2D images into interactive 3D visualizations using AI analysis.
